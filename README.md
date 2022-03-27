@@ -1,5 +1,5 @@
 # Alloy
-Alloy is an extremely fast ECS library.
+Alloy is an extremely fast ECS library providing a simple and clean API.
 
 Pull requests and new issues welcome.
 
