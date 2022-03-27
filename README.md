@@ -3,6 +3,8 @@ Alloy is an extremely fast ECS library providing a simple and clean API.
 
 Pull requests and new issues welcome.
 
+More information about the development of this library can be found here: https://0x00000000.dev/alloy-ecs-1/
+
 ## Minimal Example
 ```c++
 #include "Alloy/Alloy.h"
