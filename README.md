@@ -1,6 +1,8 @@
 # Alloy
 Alloy is an extremely fast ECS library.
 
+Pull requests and new issues welcome.
+
 ## Minimal Example
 ```c++
 #include "Alloy/Alloy.h"
@@ -12,19 +14,25 @@ struct Component
 {
     int var;
 };
-// Create a space for an entity to live
+
+// Create a space for entities to live within
 X::Space space{};
+
 // Create a new entity
 X::Entity entity = space.CreateEntity();
+
 // Give the entity a Component that is constructed with { 1 }
 space.EmplaceComponent<Component>(entity, 1);
+
 // Update over all entities in the space that have Component
 space.Update<Component>([](X::Entity entity, Component& component) {
     // Edit the component's values
     ++component.var;
 });
+
 // Remove Component from the entity
 space.RemoveComponent<Component>(entity);
+
 // Destroy the entity
 space.DestroyEntity(entity);
 ```
