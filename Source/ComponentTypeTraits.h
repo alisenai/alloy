@@ -4,6 +4,7 @@
 
 namespace X::Internal
 {
+
 struct ComponentTypeTraits
 {
     using DestructorCaller = void (*)(uint8_t* object);
@@ -23,11 +24,13 @@ struct ComponentTypeTraits
     // To get the final count, this must ONLY be called during run time
     static ComponentId& CurrentCount()
     {
+        static ComponentId currentId = 0;
         return currentId;
     }
 
     static std::vector<ComponentInfo>& GetComponentInfo()
     {
+        static std::vector<ComponentInfo> componentInfo{};
         return componentInfo;
     }
 
@@ -103,9 +106,6 @@ struct ComponentTypeTraits
 
         return CurrentCount()++;
     }
-
-    inline static ComponentId currentId = 0;
-    inline static std::vector<ComponentInfo> componentInfo{};
 };
 
 template<typename Component>

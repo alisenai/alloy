@@ -1,13 +1,3 @@
-// -----------------------------------------------------------------------------
-// \Project Name    GAM400 - SwitchBlade
-// \filename        AlloyDebug.h
-// \author          Calin Gavriliuc
-// \date            11/9/21
-// \brief           Contains debugging tools for alloy
-//
-// Copyright � 2019 DigiPen, All rights reserved.
-// -----------------------------------------------------------------------------
-
 #pragma once
 
 #include "Entity.h"

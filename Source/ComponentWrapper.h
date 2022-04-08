@@ -1,13 +1,3 @@
-// -----------------------------------------------------------------------------
-// \Project Name    GAM400 - SwitchBlade
-// \filename        ComponentWrapper.h
-// \author          Calin Gavriliuc
-// \date            9/28/21
-// \brief           A wrapper around using a component
-//
-// Copyright � 2021 DigiPen, All rights reserved.
-// -----------------------------------------------------------------------------
-
 #pragma once
 #include "Entity.h"
 #include "Space.h"
