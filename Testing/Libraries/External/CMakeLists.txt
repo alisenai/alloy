@@ -1,4 +1,4 @@
-add_library(DeltaTesterLibrariesExternal INTERFACE)
+add_library(AlloyTestingLibrariesExternal INTERFACE)
 
 add_subdirectory(googletest)
 enable_testing()
@@ -7,4 +7,4 @@ option(BENCHMARK_ENABLE_TESTING "Enable testing of the benchmark library." ON)
 set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "Enable testing of the benchmark library." FORCE)
 add_subdirectory(benchmark)
 
-target_link_libraries(DeltaTesterLibrariesExternal INTERFACE gtest benchmark::benchmark)
+target_link_libraries(AlloyTestingLibrariesExternal INTERFACE gtest benchmark::benchmark)

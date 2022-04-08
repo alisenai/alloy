@@ -1,4 +1,4 @@
 target_sources(
-        DeltaTester PUBLIC
+        AlloyTesting PUBLIC
         TestingMain.cpp
 )
